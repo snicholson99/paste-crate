@@ -1,0 +1,53 @@
+.note {
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+}
+
+.note-input {
+  height: calc(100% - 40px);
+  width: 100%;
+  background-color: #1E1E1E;
+  padding: 10px;
+  min-height: 30vh;
+  font-size: 14px;
+  border: none;
+  color: white;
+  resize: none;
+}
+
+.note-options-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.note-copy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #A4A4A4;
+  height: 40px;
+  width: 100%;
+  background-color: #0f0f0f;
+}
+
+.note-copy-container:hover {
+  color: white;
+}
+
+.note-copy-icon,
+.note-copy-label {
+  margin: 0 2px;
+}
+
+.note-copied-text {
+  margin: 10px;
+  color: lightgrey;
+}
+
+.note-copied-text > span {
+  font-style: italic;
+}
