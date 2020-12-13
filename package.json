@@ -2,7 +2,7 @@
   "name": "paste-crate",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://snicholson99.github.io/pate-crate/",
+  "homepage": "https://snicholson99.github.io/paste-crate/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
