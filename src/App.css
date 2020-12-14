@@ -39,7 +39,7 @@ header {
 }
 
 .note-container {
-  flex: 0 1 500px;
+  flex: 0 1 480px;
   display: flex;
   justify-content: center;
   padding: 2vw;

@@ -1,7 +1,6 @@
 .note {
   height: 100%;
   width: 100%;
-  max-width: 600px;
 }
 
 .note-title {
@@ -18,11 +17,11 @@
   width: 100%;
   background-color: #1E1E1E;
   padding: 10px;
-  min-height: 30vh;
+  min-height: 40vh;
   font-size: 14px;
   border: none;
   color: white;
-  resize: none;
+  resize: both;
 }
 
 .note-options-flex-container {
