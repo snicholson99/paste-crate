@@ -69,7 +69,7 @@ header {
     display: none;
   }
   .section {
-    height: 100vh;
+    height: calc(100vh - 50px);
     top: 0;
   }
   .new-note.button {
