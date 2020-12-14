@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/paste-crate/static/css/main.d9270b99.chunk.css",
+    "main.css": "/paste-crate/static/css/main.c778b0f5.chunk.css",
     "main.js": "/paste-crate/static/js/main.650a6360.chunk.js",
     "main.js.map": "/paste-crate/static/js/main.650a6360.chunk.js.map",
     "runtime-main.js": "/paste-crate/static/js/runtime-main.940865b2.js",
@@ -8,13 +8,13 @@
     "static/js/2.2ba0e304.chunk.js": "/paste-crate/static/js/2.2ba0e304.chunk.js",
     "static/js/2.2ba0e304.chunk.js.map": "/paste-crate/static/js/2.2ba0e304.chunk.js.map",
     "index.html": "/paste-crate/index.html",
-    "static/css/main.d9270b99.chunk.css.map": "/paste-crate/static/css/main.d9270b99.chunk.css.map",
+    "static/css/main.c778b0f5.chunk.css.map": "/paste-crate/static/css/main.c778b0f5.chunk.css.map",
     "static/js/2.2ba0e304.chunk.js.LICENSE.txt": "/paste-crate/static/js/2.2ba0e304.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.940865b2.js",
     "static/js/2.2ba0e304.chunk.js",
-    "static/css/main.d9270b99.chunk.css",
+    "static/css/main.c778b0f5.chunk.css",
     "static/js/main.650a6360.chunk.js"
   ]
 }
