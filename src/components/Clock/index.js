@@ -1,37 +1,20 @@
-import React, { Component } from 'react';
-import moment from 'moment';
+import React, { useState, useEffect } from "react";
+import moment from "moment";
+import "./style.css";
 
-import './style.css';
+function Clock() {
+  const [time, setTime] = useState(() => moment().format("HH:mm"));
 
-class Clock extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      time: moment().format("HH:mm"),
-    };
-  }
-  componentDidMount() {
-    this.intervalID = setInterval(
-      () => this.tick(),
-      1000
-    );
-  }
-  componentWillUnmount() {
-    clearInterval(this.intervalID);
-  }
-  tick() {
-    this.setState({
-      time: moment().format("HH:mm")
-    });
-  }
-  render() {
-    const { time } = this.state;
-    return (
-      <p className="App-clock">
-        {time}
-      </p>
-    );
-  }
+  useEffect(() => {
+    const intervalID = setInterval(() => {
+      setTime(moment().format("HH:mm"));
+    }, 1000);
+
+    // Clean up interval when component unmounts
+    return () => clearInterval(intervalID);
+  }, []);
+
+  return <p className="App-clock">{time}</p>;
 }
 
 export default Clock;

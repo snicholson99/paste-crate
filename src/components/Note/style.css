@@ -1,4 +1,15 @@
+.note-container {
+  /* flex: 1 1 330px; */
+  flex: 1 0 330px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  /* padding: 2vw; */
+}
+
 .note {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
 }
@@ -9,19 +20,22 @@
   padding: 10px;
   font-size: 14px;
   border: none;
-  color: #A4A4A4;
+  color: #a4a4a4;
   font-weight: bold;
+  flex: 0 0 auto;
 }
 
 .note-input {
   width: 100%;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   padding: 10px;
-  min-height: 40vh;
+  min-height: 30vh;
   font-size: 14px;
   border: none;
   color: white;
-  resize: both;
+  /* resize: both; */
+  flex: 1 1 auto;
+  resize: none;
 }
 
 .note-options-flex-container {
@@ -37,7 +51,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #A4A4A4;
+  color: #a4a4a4;
   height: 40px;
   background-color: #0f0f0f;
 }
@@ -47,12 +61,17 @@
 }
 
 #note-delete-container {
-  background-color: #250201;
-  color: #F08784;
+  background-color: #1e1e1e;
+  color: #a4a4a4;
   padding: 12px;
 }
 
-.note-copy-container:hover {
+#note-delete-container:hover {
+  background-color: #250201;
+  color: #f08784;
+}
+
+#note-copy-container:hover {
   color: white;
 }
 
@@ -72,4 +91,136 @@
 
 .note-copied-text > span {
   font-style: italic;
+}
+
+/* Global filter bar style */
+.global-tags-filter {
+  width: 300px;
+  max-width: 300px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 0 2px;
+  padding-bottom: 4px;
+}
+
+.tag-btn {
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 15px; */
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-btn.active {
+  background: #238127;
+  color: white;
+}
+
+/* Individual Note Tag Styling */
+.note-tags-section {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.note-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.note-tag {
+  background: #1e1e1e;
+  color: white;
+  padding: 2px 8px;
+  /* border-radius: 4px; */
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+}
+
+.remove-tag-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+}
+
+.remove-tag-btn:hover {
+  color: #f08784;
+}
+
+.note-tag-input {
+  border: none;
+  /* border-bottom: 1px solid #ccc; */
+  font-size: 12px;
+  /* padding: 4px 0; */
+  padding: 8px;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: white;
+}
+
+/* Subtle styling adjustment for the tag count integer */
+.tag-count {
+  font-size: 11px;
+  opacity: 0.6;
+  margin-left: 2px;
+}
+
+/* Relative parent container setup for absolute nested list matching */
+.autocomplete-wrapper {
+  position: relative;
+  /* max-width: 300px; */
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  margin: 4px 0 0 0;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .note-container {
+    flex: 0 0 100%;
+  }
 }
